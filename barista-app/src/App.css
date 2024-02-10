@@ -76,7 +76,9 @@ li {
   background-color: #FFFDD0;
   border-radius: 15px;
 }
-
+img{
+  height: 100px;
+}
 button.newdrink {
   width: auto;
   text-align: center;
