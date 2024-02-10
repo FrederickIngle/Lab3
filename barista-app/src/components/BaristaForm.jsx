@@ -1,6 +1,7 @@
 import React, {Component, useState} from "react";
 import RecipeChoices from "./RecipeChoices";
 import drinks from "./drinks.json";
+import '../App.css';
 
 
 const BaristaForm = () => {
@@ -87,6 +88,8 @@ const BaristaForm = () => {
             <button type = "new-drink-button" className="button newdrink" onClick={onNewDrink}>🔄</button>
         </div>
         <form className="container">
+
+         <div className = "mini-container">
             <h3>Temperature:</h3>
 
             <div className="answer-space" id={correct_temp} >
@@ -102,6 +105,9 @@ const BaristaForm = () => {
             choices={ingredients["temperature"]}
             checked={inputs["temperature"]}
             />
+        </div>
+
+        <div className = "mini-container">
 
             <h3>Syrup:</h3>
 
@@ -118,6 +124,9 @@ const BaristaForm = () => {
             choices={ingredients["syrup"]}
             checked={inputs["syrup"]}
             />
+        </div>
+
+        <div className = "mini-container">
 
             <h3>Milk:</h3>
 
@@ -134,6 +143,10 @@ const BaristaForm = () => {
             choices={ingredients["milk"]}
             checked={inputs["milk"]}
             />
+        
+        </div>
+
+        <div className = "mini-container">
 
             <h3>Blended:</h3>
 
@@ -150,6 +163,7 @@ const BaristaForm = () => {
             choices={ingredients["blended"]}
             checked={inputs["blended"]}
             />
+        </div>
                         
             
 
